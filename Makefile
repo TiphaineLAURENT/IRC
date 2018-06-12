@@ -12,14 +12,14 @@ CP	:= cp
 RM	:= rm -f
 
 all:	server client
-	$(CP) server_dir/server .
-	$(CP) client_dir/client .
 
 server: FORCE
 	$(MAKE) -C server_dir
+	$(CP) server_dir/server .
 
 client: FORCE
 	$(MAKE) -C client_dir
+	$(CP) client_dir/client .
 
 FORCE:
 

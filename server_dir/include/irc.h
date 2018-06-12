@@ -26,21 +26,21 @@
 
 # define COMMAND '/'
 
-# define RPL_WELCOME "220 :Welcome to the Internet Relay Network %s!%s@%d"CRLF
-# define RPL_QUIT "220 :See you soon %s"CRLF
-# define RPL_MESSAGE "220 :[%s] %s"CRLF
-# define RPL_LISTSTART "321 Channels :User Name"CRLF
-# define RPL_LIST "322 %s :%s"CRLF
-# define RPL_LISTEND "323 :End of list"CRLF
-# define ERR_NONICKNAMEGIVEN "431 :No nickname given"CRLF
-# define RPL_NICKNAMECHANGED "220 :Nickname changed to %s"CRLF
-# define ERR_BADCHANNAME "479 :Bad channel name"CRLF
-# define RPL_CHANUSER "287 :Successfully joined %s"CRLF
-# define RPL_LEFTCHAN "220 :Successfully left %s"CRLF
-# define ERR_NOSUCHCHANNEL "403 :%s :Wrong channel name"CRLF
-# define ERR_NOSUCHNICK "401 :%s :Unknown nickname"CRLF
-# define ERR_NOTEXTTOSEND "412 :No text to send"CRLF
-# define RPL_PRIVATEMSG "220 :User %s sent you: %s"CRLF
+# define RPL_WELCOME " :Welcome to the Internet Relay Network %s!%s@%d"CRLF
+# define RPL_QUIT " :See you soon %s"CRLF
+# define RPL_MESSAGE " :[%s] %s"CRLF
+# define RPL_LISTSTART " :Channels :User Name"CRLF
+# define RPL_LIST " :%s :%s"CRLF
+# define RPL_LISTEND " :End of list"CRLF
+# define ERR_NONICKNAMEGIVEN " :No nickname given"CRLF
+# define RPL_NICKNAMECHANGED " :Nickname changed to %s"CRLF
+# define ERR_BADCHANNAME " :Bad channel name"CRLF
+# define RPL_CHANUSER " :Successfully joined %s"CRLF
+# define RPL_LEFTCHAN " :Successfully left %s"CRLF
+# define ERR_NOSUCHCHANNEL " :%s :Wrong channel name"CRLF
+# define ERR_NOSUCHNICK " :%s :Unknown nickname"CRLF
+# define ERR_NOTEXTTOSEND " :No text to send"CRLF
+# define RPL_PRIVATEMSG " :User %s sent you: %s"CRLF
 
 typedef uint16_t port_t;
 

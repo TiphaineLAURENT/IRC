@@ -10,6 +10,6 @@
 
 # define INPUTLEN 512
 # define RESPLEN 512
-# define CRLF "/r/n"
+# define CRLF "\r\n"
 
 #endif /* !CLIENT_H_ */

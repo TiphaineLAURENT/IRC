@@ -49,6 +49,7 @@ static int client(void)
 {
 	ssize_t r;
 	char input[INPUTLEN];
+	char input_cpy[INPUTLEN];
 	char response[RESPLEN];
 	int sd = -1;
 
@@ -57,7 +58,8 @@ static int client(void)
 		if (r < 2)
 			continue;
 		input[r - 1] = 0;
-		if (strcmp("/server", strtok(input, " ")) == 0) {
+		memcpy(input_cpy, input, INPUTLEN);
+		if (strcmp("/server", strtok(input_cpy, " ")) == 0) {
 			printf("Connecting to server...\n");
 			sd = connect_server();
 			r = read(sd, response, RESPLEN);
