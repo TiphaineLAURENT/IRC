@@ -92,6 +92,7 @@ static void message_user(env_t *env, client_t *client)
 static const cmd_t cmds[] =
 {
 	{"/nick", &change_nickname},
+	{"/NICK", &change_nickname},
 	{"/list", &list_channels},
 	{"/join", &join_channel},
 	{"/part", &leave_channel},
